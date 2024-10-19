@@ -1,0 +1,31 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.Register {
+  text-align: inherit;
+}
+input {
+  padding-top: 0.5rem;
+  padding-left: 5%;
+  background-color: ghostwhite;
+  font: inherit;
+  text-size-adjust: inherit;
+}
+h3 {
+  margin: 5px;
+}
+body {
+  margin: 0;
+  background-image: url(./resources/5590457.jpg);
+}
+
+#title {
+  padding-bottom: 0;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+button {
+  margin-top: 1%;
+}
