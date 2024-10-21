@@ -1,5 +1,5 @@
 def installTerraform() {
-          echo 'working
+          echo 'working'
           echo 'installing terraform'
           echo 'finished...'
 }
@@ -14,7 +14,11 @@ pipeline {
         }
         stage ('test'){
             steps {
-                echo 'shhhhh'
+                 sh   '''
+                 echo "jj"
+                 echo "fifa"
+                 echo "ss"
+                '''
             }        
             }
         stage ('terraformsss') {
