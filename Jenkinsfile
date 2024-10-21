@@ -7,7 +7,7 @@ def installTerraform() {
           echo 'finished...'
         '''
 } else {
-    sh echo 'terraform already exists'
+    sh 'echo terraform already exists'
 }
 }
 pipeline {
@@ -15,13 +15,13 @@ pipeline {
     
     stages {
         stage ('confirm'){
-            step {
+            steps {
                 checkout scm
             }
         }
         stage ('test'){
             steps {
-                sh echo 'shhhhh'
+                sh 'echo shhhhh'
             }        
             }
         stage ('terraformsss')
