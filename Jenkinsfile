@@ -15,8 +15,9 @@ pipeline {
     
     stages {
         stage ('confirm'){
-            cleanWs()
-            checkout scm
+            step {
+                checkout scm
+            }
         }
         stage ('test'){
             steps {
