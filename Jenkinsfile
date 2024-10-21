@@ -6,6 +6,7 @@ def installTerraform() {
                     echo 'finished...'
           } else {
                     echo 'bruh'
+                    echo checkexist()
           }
 }
 pipeline {
