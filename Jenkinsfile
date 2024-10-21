@@ -4,9 +4,6 @@ def installTerraform() {
           echo 'installing terraform'
           echo 'finished...'
         '''
-} else {
-    sh 'echo terraform already exists'
-}
 }
 pipeline {
     agent any
