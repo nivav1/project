@@ -10,7 +10,6 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
   region = "il-central-1"
-  user = "default"
 }
 
 
