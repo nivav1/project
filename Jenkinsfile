@@ -15,9 +15,9 @@ pipeline {
         stage ('test'){
             steps {
                  sh   '''
-                 echo "jj"
-                 echo "fifa"
-                 echo "ss"
+                 echo 'jj'
+                 echo 'fifa'
+                 echo 'ss'
                 '''
             }        
             }
