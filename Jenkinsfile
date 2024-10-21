@@ -12,8 +12,12 @@ def installTerraform() {
 }
 pipeline {
     agent any
-
-    stages { 
+    
+    stages {
+        stage ('confirm'){
+            cleanWs()
+            checkout scm
+        }
         stage ('test'){
             steps {
                 sh echo 'shhhhh'
