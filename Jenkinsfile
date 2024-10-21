@@ -24,7 +24,7 @@ pipeline {
                 sh 'echo shhhhh'
             }        
             }
-        stage ('terraformsss')
+        stage ('terraformsss') {
             steps {
                 scripts {
                     installTerraform()
@@ -32,3 +32,5 @@ pipeline {
             }
     }
 }
+}
+
