@@ -1,6 +1,4 @@
 def installTerraform() {
-    def terraformExists = sh (script: 'which terraform', returnStatus: true)
-    if (terraformExists != 0) {
         sh '''
           echo 'working
           echo 'installing terraform'
