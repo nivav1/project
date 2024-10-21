@@ -1,9 +1,7 @@
 def installTerraform() {
-        sh '''
           echo 'working
           echo 'installing terraform'
           echo 'finished...'
-        '''
 }
 pipeline {
     agent any
