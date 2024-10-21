@@ -1,13 +1,13 @@
 def installTerraform() {
           def checkexist = sh(script: "which terrafor", returnStatus: true)
           if (checkexist != 0) {
-                    echo checkexist()
+                    echo 'checkexist()'
                     echo 'working'
                     echo 'installing terraform'
                     echo 'finished...'
           } else {
                     echo 'bruh'
-                    echo checkexist()
+                    echo 'checkexist()'
           }
 }
 pipeline {
