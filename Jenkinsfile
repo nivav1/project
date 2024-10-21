@@ -10,12 +10,20 @@ def installTerraform() {
     sh echo 'terraform already exists'
 }
 }
-node {
-    build ('test'){
-        sh echo 'shhhhh'
+pipeline {
+    agent any
+
+    stages { 
+        stage ('test'){
+            steps {
+                sh echo 'shhhhh'
+            }        
+            }
+        stage ('terraformsss')
+            steps {
+                scripts {
+                    installTerraform()
+            }
+            }
     }
-    build ('terraformsss')
-        scripts {
-            installTerraform()
-        }
 }
