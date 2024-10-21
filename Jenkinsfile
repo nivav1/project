@@ -21,9 +21,7 @@ pipeline {
             }
         stage ('terraformsss') {
             steps {
-                scripts {
-                    installTerraform()
-            }
+                installTerraform()
             }
     }
 }
