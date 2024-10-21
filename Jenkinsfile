@@ -1,7 +1,12 @@
 def installTerraform() {
-          echo 'working'
-          echo 'installing terraform'
-          echo 'finished...'
+          def checkexist = sh(script: "which terraform", returnStatus: true)
+          if (checkexist != 0) {
+                    echo 'working'
+                    echo 'installing terraform'
+                    echo 'finished...'
+          } else {
+                    echo 'bruh'
+          }
 }
 pipeline {
     agent any
