@@ -7,11 +7,6 @@ pipeline {
     agent any
     
     stages {
-        stage ('confirm'){
-            steps {
-                checkout scm
-            }
-        }
         stage ('test'){
             steps {
                  sh   '''
