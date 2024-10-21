@@ -16,12 +16,12 @@ pipeline {
         }
         stage ('test'){
             steps {
-                sh 'echo shhhhh'
+                echo 'shhhhh'
             }        
             }
         stage ('terraformsss') {
             steps {
-                installTerraform()
+               installTerraform()
             }
     }
 }
