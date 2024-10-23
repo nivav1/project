@@ -32,7 +32,7 @@ def installdocker() {
 
 
 pipeline {
-    agent dockeragent
+    agent any
     stages {
         stage ('checkout') {
             steps {
