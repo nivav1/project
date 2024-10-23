@@ -1,7 +1,6 @@
 def installdocker() {
           def checkexist = sh(script: "which docker", returnStatus: true)
           if (checkexist != 0) {
-<<<<<<< HEAD
                     sh '''
                     for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
 
@@ -23,11 +22,9 @@ def installdocker() {
                     sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
                     '''
 
-=======
                     echo 'working'
-                    echo 'installing terraform'
+                    echo 'installing docker'
                     echo 'finished...'
->>>>>>> parent of 8bc22c4 (Update Jenkinsfile)
           } else {
                     echo 'Docker already exists'
           }
