@@ -42,7 +42,6 @@ pipeline {
         stage ('build') {
             steps {
                 installdocker()
-                sh 'docker pull nivav123/webapp'
             }
         }
         stage ('deploy') {
